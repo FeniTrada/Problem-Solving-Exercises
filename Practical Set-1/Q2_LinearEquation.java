@@ -13,12 +13,10 @@ public class CramersRule {
         double e = sc.nextDouble();
         double f = sc.nextDouble();
 
-        // Calculate determinants
         double D = (a * d) - (b * c);
         double Dx = (e * d) - (b * f);
         double Dy = (a * f) - (e * c);
 
-        // Check if solution exists
         if (D == 0) {
             System.out.println("No unique solution (D = 0)");
         } else {
